@@ -22,4 +22,4 @@ RUN npm ci --only=production
 
 COPY --from=builder /usr/src/app/dist ./dist
 
-CMD ["npm", "run", "start:prod"]
+CMD ["npx", "nest", "start"]
