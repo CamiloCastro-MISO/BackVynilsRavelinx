@@ -20,7 +20,7 @@ COPY package*.json ./
 
 RUN npm ci --only=production
 
-RUN npm install @nestjs/cli
+RUN npm install -g @nestjs/cli
 
 COPY --from=builder /usr/src/app/dist ./dist
 
